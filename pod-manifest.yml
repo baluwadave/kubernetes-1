@@ -3,7 +3,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: web-server
-  # namespace: my-first-app  # Corrected field name
+  namespace: my-first-app  # Corrected field name
   labels:
     env: prod
     app: my-app
