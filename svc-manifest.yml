@@ -10,6 +10,6 @@ spec:
     - protocol: TCP
       port: 80            # Port on which the service listens
       targetPort: 8080    # Port on the pods to which traffic is forwarded
-      nodePort: 31614     # Specify the nodePort number
+      nodePort: 32057     # Specify the nodePort number
   type: NodePort          # Expose service on a NodePort
 ...
