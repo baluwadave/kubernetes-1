@@ -10,4 +10,6 @@ spec:
     - protocol: TCP
       port: 80        # Port on which the service listens
       targetPort: 8080
+  type: NodePort          # Expose service on a NodePort
+     nodePort: 30000         # Specify the nodePort number
 ...
