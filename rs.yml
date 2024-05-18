@@ -1,0 +1,26 @@
+---
+apiVersion: apps/v1 
+kind: ReplicaSet
+metadata:
+  name: my_replicaset
+spec:
+  replicas: 2 
+  selector:
+    matchExpression:
+      -{key:myname,operator:In,values:[Balu,balu]}
+      -{key:env,operator:NotIn,values:[production]}
+  template:
+    metadata:
+      name: testpod7
+      labels:
+        myname: Balu
+    spec:
+      containers:
+        - name: c00
+          image: nginx
+          ports:
+            containerPort: 80        
+...            
+
+
+
