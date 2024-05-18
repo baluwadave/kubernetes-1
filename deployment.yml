@@ -15,10 +15,5 @@ spec:
     spec:
       containers:
       - name: balu
-        image: httpd
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
-        ports:
-        - containerPort: 80
+        image: ubuntu
+        command: ["/bin/bash", "-c", "while true; do echo Technical-Guftgu; sleep 5 ; done"]
