@@ -1,0 +1,28 @@
+apiVersion: rabc.autherization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: project-1
+  name: project-1/frontend
+rules:
+  - apigroups: [""]
+    resources: ["pod"]
+    verbs    : ["get","watch","list"]
+
+---
+apiVersion: rabc.autherization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: read-pods
+  namespace: default
+subjects:
+  - kind: User 
+    name: "balu"
+    apigroup: rabc.autherization.k8s.io/v1
+roleRef:
+  kind : Role
+  name: pod-reader
+apigroup: rabc.autherization.k8s.io/v1
+       
+
+
+
