@@ -1,5 +1,5 @@
 #!/bin/bash
-My_Var = "Hey Buddy How are you?"
+My_Var="Hey Buddy How are you?"
 
 
 My_Var_Length=${#My_Var}
