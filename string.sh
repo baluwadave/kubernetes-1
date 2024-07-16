@@ -10,5 +10,5 @@ echo "Upper case is -------${My_Var^^}"
 echo "Lower case is -------${My_Var,,}"
 
 #To replace the string 
-New_Var= ${My_Var/Buddy/Balu}
+New_Var=${My_Var/Buddy/Balu}
 echo "New Var is ---- $New_Var"
