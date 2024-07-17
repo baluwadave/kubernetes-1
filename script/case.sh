@@ -6,7 +6,11 @@ echo "b =  list all files in current directory"
 read choice 
 # it is choice of the multiple o/p?
 case $choice in 
-        a) date;;
+        a) 
+                echo "todays date is:"
+                date 
+                echo "Ending-----"
+                ;; 
         b) ls;;
         *) echo "Non Valid Input"
 esac        
