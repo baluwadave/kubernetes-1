@@ -9,4 +9,4 @@ addition(){
     echo "Sum of $num1 and $num2 is $sum"    
 }
 
-addition 20 15
+addition 10 15
