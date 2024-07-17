@@ -4,8 +4,7 @@ echo "b =  list all files in current directory"
 
 
 read choice 
-
-
+# it is choice of the multiple o/p?
 case $choice in 
         a) date;;
         b) ls;;
